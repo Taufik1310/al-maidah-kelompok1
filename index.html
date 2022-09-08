@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Al-Maidah</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section>
+      <img src="./img/stars.png" alt="stars" id="stars" />
+      <img src="./img/moon.png" alt="moon" id="moon" />
+      <img src="./img/mountains_behind.png" alt="mountains_behind" id="mountains-behind" />
+      <h1 id="text">AL-MAIDAH</h1>
+      <p id="text2">Q.S.AL-MAIDAH/5:48</p>
+      <img src="./img/mountains_front.png" alt="mountains_front" id="mountains-front" />
+    </section>
+    <div class="ayat">
+      <p>
+        وَاَنْزَلْنَآ اِلَيْكَ الْكِتٰبَ بِالْحَقِّ مُصَدِّقًا لِّمَا بَيْنَ يَدَيْهِ مِنَ الْكِتٰبِ وَمُهَيْمِنًا عَلَيْهِ فَاحْكُمْ بَيْنَهُمْ بِمَآ اَنْزَلَ اللّٰهُ وَلَا تَتَّبِعْ اَهْوَاۤءَهُمْ عَمَّا جَاۤءَكَ مِنَ الْحَقِّۗ لِكُلٍّ
+        جَعَلْنَا مِنْكُمْ شِرْعَةً وَّمِنْهَاجًا ۗوَلَوْ شَاۤءَ اللّٰهُ لَجَعَلَكُمْ اُمَّةً وَّاحِدَةً وَّلٰكِنْ لِّيَبْلُوَكُمْ فِيْ مَآ اٰتٰىكُمْ<span> فَاسْتَبِقُوا الْخَيْرٰتِۗ</span> اِلَى اللّٰهِ مَرْجِعُكُمْ جَمِيْعًا
+        فَيُنَبِّئُكُمْ بِمَا كُنْتُمْ فِيْهِ تَخْتَلِفُوْنَۙ
+      </p>
+      <br /><br />
+      <p class="arti">
+        48. Dan Kami telah menurunkan Kitab (Al-Qur'an) kepadamu (Muhammad) dengan membawa kebenaran, yang membenarkan kitab-kitab yang diturunkan sebelumnya dan menjaganya, maka putuskanlah perkara mereka menurut apa yang diturunkan Allah
+        dan janganlah engkau mengikuti keinginan mereka dengan meninggalkan kebenaran yang telah datang kepadamu. Untuk setiap umat di antara kamu, Kami berikan aturan dan jalan yang terang. Kalau Allah menghendaki, niscaya kamu
+        dijadikan-Nya satu umat (saja), tetapi Allah hendak menguji kamu terhadap karunia yang telah diberikan-Nya kepadamu, maka berlomba-lombalah berbuat kebajikan. Hanya kepada Allah kamu semua kembali, lalu diberitahukan-Nya kepadamu
+        terhadap apa yang dahulu kamu perselisihkan,
+      </p>
+    </div>
+    <div class="sec">
+      <h2>Kandungan Al-Maidah ayat 48</h2>
+      <br />
+      <p>
+        Al-Quran diturunkan sebagai pembenar bagi kitab-kitab sebelumnya. Allah SWT. menjelaskan, setiap kaum diberikan aturan atau syariat yang berbeda-beda sesuai dengan kondisi atau keadaan pada saat itu. Allah SWT. mengutus para nabi
+        dan menurunkan syariat kepadanya untuk memberi petunjuk kepada manusia agar berjalan pada jalan atau arah yang benar dan lurus. Allah SWT. menurunkan Al-Qur’an sebagai pembenar kitab-kitab sebelumnya, juga sebagai penjaga
+        kitab-kitab tersebut. Jika Allah berkehendak maka Allah dapat menjadikan seluruh umat manusia sebagai satu kaum namun Allah menciptakan manusia berbeda-beda. Perbedaan tersebut adalah rahmat dari Allah sekaligus merupakan ujian bagi
+        manusia. <br /><br />
+        Allah juga memerintahkan manusia untuk berlomba-lomba dalam berbuat kebaikan. Hal ini dapat mendorong manusia untuk berkembang. Melakukan kebaikan juga tidak dapat ditunda-tunda, hal ini dikarenakan umur manusia terbatas dan tidak
+        tahu kapan kematian akan menjeput. Yang terakhir Allah SWT. memantau segala yang dilakukan manusia. Kelak manusia akan dikembalikan kepada-Nya. Lalu manusia akan diberitahukan apa yang mereka perselisihan sewaktu di dunia.
+      </p>
+    </div>
+
+    <script>
+      let stars = document.querySelector("#stars");
+      let moon = document.querySelector("#moon");
+      let mountainsBehind = document.querySelector("#mountains-behind");
+      let mountainsFront = document.querySelector("#mountains-front");
+      let text = document.querySelector("#text");
+      let text2 = document.querySelector("#text2");
+
+      window.addEventListener("scroll", () => {
+        let value = window.scrollY;
+
+        stars.style.left = `${value * 0.25}px`;
+        moon.style.top = `${value * 1.05}px`;
+        mountainsBehind.style.top = `${value * 0.5}px`;
+        mountainsFront.style.top = `${value * 0}px`;
+        text.style.marginRight = `${value * 4}px`;
+        text.style.marginTop = `${value * 1.5}px`;
+        text2.style.top = `${value}px`;
+      });
+    </script>
+  </body>
+</html>
